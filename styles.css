@@ -30,7 +30,7 @@ body {
 }
 
 .pageContainer {
-    display: flex;
+    display: flex-block;
     justify-content: center;
     
 }
@@ -40,4 +40,39 @@ body {
     /*border: 1px solid red;*/
     width: 300px;
     color: #059DB9;
+    margin: 33px auto;
+}
+
+.mainProfilePhoto {
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 33px;
+}
+
+.mainIntro {
+    width: 300px;
+    /*border: 1px solid red;*/
+    margin: 0 auto;
+    
+}
+
+.mainIntro p {
+    text-align: left;
+    line-height: 20px;
+    color: white;
+    
+}
+
+.buttonDiv {
+    margin: 55px auto;
+}
+
+.downloadCVButton {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #059DB9;
+    
 }
