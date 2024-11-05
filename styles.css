@@ -52,6 +52,10 @@ body {
     width: calc(var(--spacing-unit10) *3);
 }
 
+#openMenu:target {
+    display: block;
+}
+
 .dropdownMenu {
     flex-direction: column;
     /*border: 1px solid #059DB9;*/
@@ -64,12 +68,13 @@ body {
     height: calc(var(--spacing-unit100)*2);
     margin: 0 auto;
     align-content: center;
-    /*display: none;*/
+    display: none;
 }
 
 /*Hide .navLinks, until clicked on hamburger*/
 .navLinks {
     /*display: none;*/
+    list-style: none;
 }
 
 .navLinks a {
