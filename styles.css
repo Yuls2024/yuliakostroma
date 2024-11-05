@@ -4,9 +4,28 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
 
 body {
-    background-color: #000000;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+:root {
+    /* Color scheme */
+    --accent-color: #059DB9; /* aqua */
+    --main-color: #000000; /* black */
+    --text-color: #ffffff; /* white */
+    /* Typography */
+    --spacing-unit10: 10px;
+    --spacing-unit100: 100px;
+}
+
+body {
+    background-color: var(--main-color);
     /*background-color: lime;*/
     text-align: center;
     padding: 30px;
@@ -20,19 +39,25 @@ body {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
+    /*width: 100px;*/
+    width: var(--spacing-unit100);
+    /*height: 100px;*/
+    height: var(--spacing-unit100);
+    /*border-radius: 10px;*/
+    border-radius: var(--spacing-unit10);
 }
 
 .hamburger {
-    width: 30px;
+    /*width: 30px;*/
+    width: calc(var(--spacing-unit10) *3);
 }
 
 .dropdownMenu {
     flex-direction: column;
-    border: 1px solid #059DB9;
-    border-radius: 10px;
+    /*border: 1px solid #059DB9;*/
+    border: 1px solid var(--accent-color);
+    /*border-radius: 10px;*/
+    border-radius: var(--spacing-unit);
     width: 300px;
     height: 200px;
     margin: 0 auto;
@@ -47,7 +72,8 @@ body {
 
 .navLinks a {
     text-decoration: none;
-    color: white;
+    /*color: white;*/
+    color: var(--text-color);
     text-transform: uppercase;
     font-size: 16px;
     line-height: 30px;
@@ -62,19 +88,26 @@ body {
 .mainHeader {
     text-align: center;
     /*border: 1px solid red;*/
-    width: 300px;
-    color: #059DB9;
+    /*width: 300px;*/
+    width: calc(var(--spacing-unit100)*3);
+    /*color: #059DB9;*/
+    color: var(--accent-color);
     margin: 33px auto;
 }
 
 .mainProfilePhoto {
-    width: 300px;
-    border-radius: 20px;
-    margin-bottom: 33px;
+    /*width: 300px;*/
+    width: calc(var(--spacing-unit100)*3);
+    /*border-radius: 20px;*/
+    border-radius: calc(var(--spacing-unit10)*2);
+    /*margin-bottom: 33px;*/
+    margin-bottom: calc(var(--spacing-unit10)*3.5);
+
 }
 
 .mainIntro {
-    width: 300px;
+    /*width: 300px;*/
+    width: calc(var(--spacing-unit100)*3);
     /*border: 1px solid red;*/
     margin: 0 auto;
     
@@ -82,21 +115,26 @@ body {
 
 .mainIntro p {
     text-align: left;
-    line-height: 20px;
-    color: white;
-    
+    /*line-height: 20px;*/
+    line-height: calc(var(--spacing-unit10)*2);
+    color: var(--text-color);
 }
 
 .buttonDiv {
-    margin: 55px auto;
+    /*margin: 55px auto;*/
+    margin: calc(var(--spacing-unit10)*5.5)auto;
+
 }
 
 .downloadCVButton {
     text-decoration: none;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 5px;
+    color: var(--text-color);
+    /*padding: 10px 15px;*/
+    padding: var(--spacing-unit10) calc(var(--spacing-unit10)*1.5);
+    /*border-radius: 5px;*/
+    border-radius: calc(var(--spacing-unit10)*0.5);
     border: none;
-    background-color: #059DB9;
-    
+    /*background-color: #059DB9;*/
+    background-color: var(--accent-color); 
+    margin: 
 }
