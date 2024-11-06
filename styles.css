@@ -22,6 +22,8 @@ body {
     /* Typography */
     --spacing-unit10: 10px;
     --spacing-unit100: 100px;
+    --header-font34: 34 px;
+
 }
 
 body {
@@ -52,6 +54,7 @@ body {
     width: calc(var(--spacing-unit10) *3);
 }
 
+/* Opens menu when clicked on hamburger */
 #openMenu:target {
     display: block;
 }
@@ -92,8 +95,10 @@ body {
     
 }
 
-.mainHeader {
+.sectionHeader {
     text-align: center;
+    text-transform: uppercase;
+    font-size: var(--header-font34);
     /*border: 1px solid red;*/
     /*width: 300px;*/
     width: calc(var(--spacing-unit100)*3);
@@ -112,7 +117,7 @@ body {
 
 }
 
-.mainIntro {
+.text {
     /*width: 300px;*/
     width: calc(var(--spacing-unit100)*3);
     /*border: 1px solid red;*/
@@ -120,7 +125,7 @@ body {
     
 }
 
-.mainIntro p {
+.text p {
     text-align: left;
     /*line-height: 20px;*/
     line-height: calc(var(--spacing-unit10)*2);
@@ -143,5 +148,5 @@ body {
     border: none;
     /*background-color: #059DB9;*/
     background-color: var(--accent-color); 
-    margin: 
+     
 }
