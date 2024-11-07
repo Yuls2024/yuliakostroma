@@ -89,6 +89,10 @@ body {
     line-height: 30px;
 }
 
+.navLinks a:hover {
+    color: var(--accent-color);
+}
+
 .pageContainer {
     display: flex-block;
     justify-content: center;
@@ -107,6 +111,15 @@ body {
     margin: 33px auto;
 }
 
+.servicesHeader {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--header-font34);
+    width: calc(var(--spacing-unit100)*3);
+    color: var(--accent-color);
+    margin: var(--spacing-unit10) auto;
+}
+
 .mainProfilePhoto {
     /*width: 300px;*/
     width: calc(var(--spacing-unit100)*3);
@@ -114,15 +127,19 @@ body {
     border-radius: calc(var(--spacing-unit10)*2);
     /*margin-bottom: 33px;*/
     margin-bottom: calc(var(--spacing-unit10)*3.5);
+}
 
+.servicesPhoto {
+    width: calc(var(--spacing-unit100)*2.5);
+    border-radius: calc(var(--spacing-unit10)*2.5);
+    margin-bottom: calc(var(--spacing-unit10)*1);
 }
 
 .text {
     /*width: 300px;*/
     width: calc(var(--spacing-unit100)*3);
     /*border: 1px solid red;*/
-    margin: 0 auto;
-    
+    margin: 0 auto;  
 }
 
 .text p {
@@ -130,6 +147,21 @@ body {
     /*line-height: 20px;*/
     line-height: calc(var(--spacing-unit10)*2);
     color: var(--text-color);
+}
+
+.services {
+    /*width: 300px;*/
+    width: calc(var(--spacing-unit100)*2.3);
+    /*border: 1px solid red;*/
+    margin: 0 auto;  
+}
+
+.services p {
+    text-align: center;
+    /*line-height: 20px;*/
+    line-height: calc(var(--spacing-unit10)*2);
+    color: var(--text-color);
+    font-size: 16px;
 }
 
 .buttonDiv {
