@@ -24,6 +24,7 @@ body {
     --spacing-unit100: 100px;
     --header-font34: 34 px;
     --header-font25: 25px;
+    --header-font20: 20px;
 
 }
 
@@ -186,19 +187,19 @@ body {
 
 .skillsBox {
     border: 1px solid white;
-    width: calc(var(--spacing-unit100)*3.5);
+    width: calc(var(--spacing-unit100)*4);
     border-radius: calc(var(--spacing-unit10)*2);
     color: var(--text-color);
     /*padding: calc(var(--spacing-unit10)*2.5) auto;*/
     padding: 25px 0 45px;
     list-style-type: none;
-    margin: 0 auto;
+    margin: 0 auto var(--spacing-unit10);
 }
 
 .skillsHeader {
     text-align: center;
     text-transform: uppercase;
-    font-size: var(--header-font25);
+    font-size: var(--header-font20);
     width: calc(var(--spacing-unit100)*3);
     color: var(--accent-color);
     margin: var(--spacing-unit10) auto;
@@ -209,5 +210,22 @@ body {
     text-align: left;
     margin: 0 auto;
     /*border: 1px solid green;*/
-    width: calc(var(--spacing-unit100)*2.5);
+    width: calc(var(--spacing-unit100)*2.1);
+}
+
+.withBullets {
+    text-align: left;
+    margin: 0 auto;
+    border: 1px solid green;
+    width: calc(var(--spacing-unit100)*2.1);
+    padding-left: var(--spacing-unit10);
+}
+
+.skills ul li {
+    padding-bottom: calc(var(--spacing-unit10)*0.5);
+}
+
+.largerBox {
+    border: 1px solid red;
+    width: calc(var(--spacing-unit100)*2.8);
 }
