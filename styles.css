@@ -23,6 +23,7 @@ body {
     --spacing-unit10: 10px;
     --spacing-unit100: 100px;
     --header-font34: 34 px;
+    --header-font25: 25px;
 
 }
 
@@ -102,7 +103,7 @@ body {
 .sectionHeader {
     text-align: center;
     text-transform: uppercase;
-    font-size: var(--header-font34);
+    font-size: var(--header-font25);
     /*border: 1px solid red;*/
     /*width: 300px;*/
     width: calc(var(--spacing-unit100)*3);
@@ -114,7 +115,7 @@ body {
 .servicesHeader {
     text-align: center;
     text-transform: uppercase;
-    font-size: var(--header-font34);
+    font-size: var(--header-font25);
     width: calc(var(--spacing-unit100)*3);
     color: var(--accent-color);
     margin: var(--spacing-unit10) auto;
