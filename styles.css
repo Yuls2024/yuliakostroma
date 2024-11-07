@@ -183,3 +183,31 @@ body {
     background-color: var(--accent-color); 
      
 }
+
+.skillsBox {
+    border: 1px solid white;
+    width: calc(var(--spacing-unit100)*3.5);
+    border-radius: calc(var(--spacing-unit10)*2);
+    color: var(--text-color);
+    /*padding: calc(var(--spacing-unit10)*2.5) auto;*/
+    padding: 25px 0 45px;
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.skillsHeader {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: var(--header-font25);
+    width: calc(var(--spacing-unit100)*3);
+    color: var(--accent-color);
+    margin: var(--spacing-unit10) auto;
+}
+
+.noBullets {
+    list-style-type: none;
+    text-align: left;
+    margin: 0 auto;
+    /*border: 1px solid green;*/
+    width: calc(var(--spacing-unit100)*2.5);
+}
