@@ -226,6 +226,6 @@ body {
 }
 
 .largerBox {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     width: calc(var(--spacing-unit100)*2.8);
 }
