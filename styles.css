@@ -196,7 +196,7 @@ body {
     margin: 0 auto var(--spacing-unit10);
 }
 
-.skillsHeader {
+.skillsHeader, .portfolioHeader {
     text-align: center;
     text-transform: uppercase;
     font-size: var(--header-font20);
@@ -228,4 +228,9 @@ body {
 .largerBox {
     /*border: 1px solid red;*/
     width: calc(var(--spacing-unit100)*2.8);
+}
+
+.portfolioPhoto {
+    width: calc(var(--spacing-unit100)*2.5);
+    border-radius: calc(var(--spacing-unit10)*2.5);
 }
