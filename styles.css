@@ -76,6 +76,7 @@ body {
     display: none;
 }
 
+
 /*Hide .navLinks, until clicked on hamburger*/
 .navLinks {
     /*display: none;*/
@@ -98,7 +99,6 @@ body {
 .pageContainer {
     display: flex-block;
     justify-content: center;
-    
 }
 
 .sectionHeader {
@@ -242,4 +242,32 @@ body {
     width: calc(var(--spacing-unit100)*3);
     color: var(--text-color);
     margin: var(--spacing-unit10) auto;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: yellow;
+    }
+
+    .tabletMenu {
+        flex-direction: row;
+        /*border: 1px solid #059DB9;*/
+        /*border: 1px solid var(--accent-color);*/
+        /*border-radius: 10px;*/
+        border-radius: var(--spacing-unit10);
+        width: 600px;
+        /*height: 200px;*/
+        height: calc(var(--spacing-unit100)*2);
+        margin: 0 auto;
+        align-content: center;
+        /*display: none;*/
+        border: 1px solid red;
+        color: black;
+    }
+
+    .navLinks {
+        display: flex;
+        justify-content: space-around;
+
+    }
 }
