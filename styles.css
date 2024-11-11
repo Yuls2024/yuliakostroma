@@ -73,6 +73,10 @@ body {
     height: calc(var(--spacing-unit100)*2);
     margin: 0 auto;
     align-content: center;
+    
+}
+
+.tabletMenu {
     display: none;
 }
 
@@ -249,7 +253,16 @@ body {
         background-color: yellow;
     }
 
+    .hamburger {
+        display: none;
+    }
+
+    .dropdownMenu {
+        display: none;
+    }
+
     .tabletMenu {
+        display: flex;
         flex-direction: row;
         /*border: 1px solid #059DB9;*/
         /*border: 1px solid var(--accent-color);*/
